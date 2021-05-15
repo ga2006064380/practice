@@ -3,8 +3,9 @@ li{
 }
 .say{
 	border-radius: 25px;
-    background: #ffd700;
-    padding: 6px 30px;
+    background: #FFD306;
+    padding: 6px 10px;
+    opacity: .7;
 }
 .navbar-expand-lg{
 	padding-top: 1%;
@@ -28,9 +29,14 @@ li{
 	font-weight:bold;
 	margin-bottom: 10%;
 }
+
+
 #say{
 	margin-right: 100px;
-	margin-left: 50px;
+	margin-left: 43px;
+}
+.nav-item{
+	margin-left: 85px;
 }
 .nav1{
 	margin-left: 80px;
@@ -43,6 +49,7 @@ li{
 #navbarNav ul{
 	display: inline-block;
 }
+
 #navbarNav li{
 	float:left;
 	list-style-type: none;
@@ -79,13 +86,8 @@ li{
 	margin-left: 10px;
 }
 
-table{
-	/*margin-left: 15%;*/
-	/*margin-right: 15%;*/
-	max-width: 65%;
-}
 
-table,th {
+th{
     border: 1px solid #E0E0E0;
 }
 
@@ -100,18 +102,36 @@ td,img{
 }
 
 td,p{
-	font-size: 15px;
+	font-size: 1.2rem;
 	font-weight:bold;
-	padding-top: 8px;
-	padding-bottom: 8px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
-.ar{
+.tdr{
 	border-right-style:solid;
 	border-right-color:#E0E0E0;
 	border-right-width:1px;
 	color:#FFD306;
-	font-size:20px;
+	font-size:30px;
 	padding-right: 18px;
 }
 
+.tdl{
+	border-left-style:solid;
+	border-left-color:#E0E0E0;
+	border-left-width:1px;
+
+}
+
+.tdr ,.tdl{
+	border-bottom-style:solid;
+	border-bottom-color:#E0E0E0;
+	border-bottom-width:1px;
+}
+
+.container table {
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+}
