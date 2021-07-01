@@ -1,0 +1,109 @@
+<main x-data="{showPortrait:false}" class="bg-black text-white">
+<div style="background-image: url(images/elite-bg.png)" class="bg-cover bg-center">
+    <div class="mx-auto container md:px-0 px-3">
+      <div class="hero pb-12 md:pb-20">
+        <div class="pt-72 md:pt-64">
+          <div>
+            好來屋12位最優秀精英
+          </div>
+          <div class="text-4xl md:text-5xl font-bold mt-2">
+            最懂您的地產經理
+            <br>
+            盡在好來屋精英會
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mx-auto container md:px-0 px-3">
+
+    <div class="md:py-12 py-6">
+      {{> common/title title="好來屋精英會"}}
+      
+      <div class="mt-5">
+        <div class="md:grid md:grid-cols-4 md:gap-x-8 md:gap-y-8">
+          <div class="cursor-pointer mb-8 md:mb-0" @click="showPortrait=true">
+            {{> common/portrait}}
+          </div>
+          <div class="cursor-pointer mb-8 md:mb-0" @click="showPortrait=true">{{> common/portrait}}</div>
+          <div class="cursor-pointer mb-8 md:mb-0" @click="showPortrait=true">{{> common/portrait}}</div>
+          <div class="cursor-pointer mb-8 md:mb-0" @click="showPortrait=true">{{> common/portrait}}</div>
+          <div class="cursor-pointer mb-8 md:mb-0" @click="showPortrait=true">{{> common/portrait}}</div>
+          <div class="cursor-pointer mb-8 md:mb-0" @click="showPortrait=true">{{> common/portrait}}</div>
+          <div class="cursor-pointer mb-8 md:mb-0" @click="showPortrait=true">{{> common/portrait}}</div>
+          
+          
+          
+          
+          
+          
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+<div x-show="showPortrait" class="modal fixed w-full h-full top-0 left-0 md:flex items-center justify-center z-40 overflow-y-auto">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-75"></div>
+    <div class="modal-container bg-white w-full md:w-11/12 md:max-w-8xl mx-auto rounded shadow-lg z-50 overflow-y-auto">
+      <!-- Add margin if you want to see some of the overlay behind the modal-->
+      <div class="modal-content text-left">
+
+        <div class="md:flex relative">
+          <div class="absolute right-5 top-3 z-50">
+            <a class="md:text-orange" href="#" @click="showPortrait=false">
+              <i class="fas fa-times" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div style="" class="md:w-5/12">
+            <img src="images/Portrait-l.png">
+          </div>
+          <div style="" class="px-5 py-4 text-black md:w-7/12 bg-white">
+            <div class="px-12 pt-8">
+              <h3 class="text-blue text-3xl font-bold">
+                何德明 Matthew Ho
+              </h3>
+              <div class="text-orange text-lg mt-3">
+                物業經理
+              </div>
+              <div class="max-w-md mt-3 leading-7">
+                本人忠實誠信,講原則，說到做到，決不推卸責任;有自制力，做事情始終堅持有始有終，從不半途而廢;肯學習,有問題不逃避,願意虛心向他人學習;自信但不自負,不以自我為中心;願意以謙虛態度讚揚接納優越者,權威者;會用100%的熱情和精力投入到工作中;平易近人。為人誠懇,性格開朗,積極進取,適應力強、勤奮好學、腳踏實地，有較強的團隊精神,工作積極進取,態度認真。
+              </div>
+            </div>
+
+            <div class="mt-20 px-12">
+              <div class="flex">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24.7 2.6H20.8V1.3C20.8 0.955218 20.663 0.624558 20.4192 0.380761C20.1754 0.136964 19.8448 0 19.5 0H6.5C6.15522 0 5.82456 0.136964 5.58076 0.380761C5.33696 0.624558 5.2 0.955218 5.2 1.3V2.6H1.3C0.955218 2.6 0.624558 2.73696 0.380761 2.98076C0.136964 3.22456 0 3.55522 0 3.9V7.8C0 13.403 2.3387 16.783 6.2647 16.9156C6.83944 17.9033 7.62417 18.7527 8.56339 19.4037C9.50261 20.0547 10.5734 20.4915 11.7 20.683V23.4H9.1V26H16.9V23.4H14.3V20.683C15.4263 20.4907 16.4968 20.0537 17.4359 19.4027C18.375 18.7518 19.1599 17.9028 19.7353 16.9156C23.6613 16.783 26 13.403 26 7.8V3.9C26 3.55522 25.863 3.22456 25.6192 2.98076C25.3754 2.73696 25.0448 2.6 24.7 2.6ZM2.6 7.8V5.2H5.2V14.079C2.8808 13.1014 2.6 9.4887 2.6 7.8ZM20.8 14.079V5.2H23.4V7.8C23.4 9.4887 23.1192 13.1014 20.8 14.079Z" fill="#ED9247"></path>
+                </svg>
+
+                <div class="text-blue ml-3">
+                  <div class="font-bold">
+                    2020全年最強營業員 第一名
+                  </div>
+
+                  <div class="mt-3 text-sm">
+                    <div class="mb-2">
+                      # 2020季度最佳業績營業員 第一名
+                    </div>
+                    <div class="mb-2">
+                      # 2020全年最多單數營業員 第三名
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</main>

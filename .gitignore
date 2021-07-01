@@ -1,0 +1,9 @@
+/node_modules/
+/dist/
+/build/
+.DS_Store
+*.log
+/test/e2e/reports/*
+/fake_api/scripts/token.json
+/fake_api/scripts/export/*
+/.bin/

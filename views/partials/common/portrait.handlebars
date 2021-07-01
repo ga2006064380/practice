@@ -1,0 +1,19 @@
+
+
+<div x-data="{show:false}" class="relative bg-cover h-454 rounded-md overflow-hidden bg-center " style="background-image: url(images/portrait.png);" @mouseover="show=true" @mouseover.away = "show = false" >
+    <div class="absolute bottom-0 bg-blue w-full font-bold px-6 py-3 md:py-5 text-center md:text-left">
+      #2020全年最強營業員第一名
+      <div :class="{'h-0':!show, 'h-20':show, 'portrait-info':true}">
+        <div class="mt-5" @click="qq=true">
+          <img class="h-2" src="images/LogoHalf.png" />
+        </div>
+        <div class="font-bold text-sm">
+          何德明 Matthew Ho
+        </div>
+        <div class="font-normal text-xs mt-1">
+          物業經理
+        </div>
+      </div>
+
+    </div>
+  </div>

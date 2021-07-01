@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;600;700;800&family=Noto+Serif+TC:wght@300;400;500;700;900&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Sora:wght@600&display=swap');
+// Required Core Stylesheet
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+// Optional Theme Stylesheet
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+@import '_variables';
+@import '_comoponent';
+@import '_global';

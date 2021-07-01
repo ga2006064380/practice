@@ -1,0 +1,174 @@
+<header>
+    <div class="mx-auto container">
+        <div class="nav-main my-8 hidden md:block">
+            <div class="flex justify-between">
+                <div class="logo">
+                    <img src="images/logo.png" />
+                </div>
+                <div class="flex justify-end font-medium text-dark2">
+                    <a class="nav-item mt-nav" href="#">
+                        首頁
+                    </a>
+                    <a class="nav-item mt-nav" href="#">
+                        關於好來屋
+                    </a>
+                    <a class="nav-item mt-nav" href="#">
+                        最近動態
+                    </a>
+                    <a class="nav-item mt-nav" href="#">
+                        業主專區
+                    </a>
+                    <a class="nav-item mt-nav" href="#">
+                        買家/租客專區
+                    </a>
+                    <a class="nav-item mt-nav" href="#">
+                        聯絡我們
+                    </a>
+                    <a href="#" class="btn btn-primary mt-nav">
+                        申請放盤
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div x-data="{'open':false}" class="md:hidden">
+            <div :class="{'open':open}">
+                <div class="nav-main-mobile flex justify-between">
+                    <img class="logo" src="images/logo.png" />
+                    <div class="toggle" @click="open=true">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="8.875" y1="15.625" x2="33.125" y2="15.625" stroke="#ED9247" stroke-width="2"
+                                stroke-linecap="square" stroke-linejoin="round" />
+                            <line x1="8.875" y1="20.875" x2="33.125" y2="20.875" stroke="#ED9247" stroke-width="2"
+                                stroke-linecap="square" stroke-linejoin="round" />
+                            <line x1="8.875" y1="26.125" x2="33.125" y2="26.125" stroke="#ED9247" stroke-width="2"
+                                stroke-linecap="square" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="nav-main-open">
+                    <div class="nav-main-mobile flex justify-between">
+                        <img class="logo" src="images/logo.png" />
+                        <div class="toggle" @click="open=false">
+                            <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="21" cy="21" r="21" fill="white" />
+                                <line x1="11.2929" y1="30.2929" x2="29.8544" y2="11.7313" stroke="#ED9247"
+                                    stroke-width="2" />
+                                <line x1="29.8544" y1="30.2686" x2="11.2929" y2="11.7071" stroke="#ED9247"
+                                    stroke-width="2" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="mt-2 border-bottom nav-group">
+                        <div x-data="{'expend':false}">
+                            <div class="nav-item">
+                                <div class="flex justify-between">
+                                    <a href="#">
+                                        關於好來屋
+                                    </a>
+                                    <span class="func" @click="expend=!expend">
+                                        <img x-show="!expend" src="images/add.png" />
+                                        <img x-show="expend" src="images/odd.png" />
+                                    </span>
+                                </div>                                
+                                <div x-show="expend">
+                                    <div class="nav-sub-item">
+                                        <a href="#">
+                                            好來屋動態
+                                        </a>
+                                        <a href="#">
+                                            好來屋動態
+                                        </a>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div x-data="{'expend':false}">
+                            <div class="nav-item">
+                                <div class="flex justify-between">
+                                    <a href="#">
+                                        最新動態
+                                    </a>
+                                    <span class="func" @click="expend=!expend">
+                                        <img x-show="!expend" src="images/add.png" />
+                                        <img x-show="expend" src="images/odd.png" />
+                                    </span>
+                                </div>                                
+                                <div x-show="expend">
+                                    <div class="nav-sub-item">
+                                        <a href="#">
+                                            好來屋動態
+                                        </a>
+                                        <a href="#">
+                                            好來屋動態
+                                        </a>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div x-data="{'expend':false}">
+                            <div class="nav-item">
+                                <div class="flex justify-between">
+                                    <a href="#">
+                                        業主專區
+                                    </a>
+                                    <span class="func" @click="expend=!expend">
+                                        <img x-show="!expend" src="images/add.png" />
+                                        <img x-show="expend" src="images/odd.png" />
+                                    </span>
+                                </div>                                
+                                <div x-show="expend">
+                                    <div class="nav-sub-item">
+                                        <a href="#">
+                                            好來屋動態
+                                        </a>
+                                        <a href="#">
+                                            好來屋動態
+                                        </a>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div x-data="{'expend':false}">
+                            <div class="nav-item">
+                                <div class="flex justify-between">
+                                    <a href="#">
+                                        租客專區
+                                    </a>
+                                    <span class="func" @click="expend=!expend">
+                                        <img x-show="!expend" src="images/add.png" />
+                                        <img x-show="expend" src="images/odd.png" />
+                                    </span>
+                                </div>                                
+                                <div x-show="expend">
+                                    <div class="nav-sub-item">
+                                        <a href="#">
+                                            好來屋動態
+                                        </a>
+                                        <a href="#">
+                                            好來屋動態
+                                        </a>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="nav-group mt-8">
+                        <a class="btn btn-primary lg block text-center" href="#">
+                            申請放盤
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

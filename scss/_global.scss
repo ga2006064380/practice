@@ -1,0 +1,23 @@
+// General
+html{
+    &[data-font="x1"]{
+        font-size: 1rem;
+    }
+    &[data-font="x2"]{
+        font-size: 1.2rem;
+    }
+    &[data-font="x3"]{
+        font-size: 1.4rem;
+    }        
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+a, button{
+    transition: all ease-in-out .3s;
+}
+
+// Mock Tailwind
+.opacity-10{
+    opacity: .1;
+}
